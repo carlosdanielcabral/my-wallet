@@ -1,0 +1,109 @@
+.dropdown > button {
+  display: none;
+}
+
+.expenses-form {
+  align-items: center;
+  background-color: #374a59;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px 10px;
+  width: 100%;
+}
+
+.expenses-form.edit {
+  background-color: #52676e;
+  color: white;
+}
+
+.expenses-form label {
+  align-items: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.expenses-form input , .expenses-form select , .expenses-form button {
+  background-color: white;
+  border: 1px solid rgb(200, 200, 200);
+  border-radius: 3px;
+  box-sizing: border-box;
+  height: 25px;
+  margin: 5px;
+  padding: 0 5px;
+}
+
+.expenses-form button {
+  background-color: rgb(255, 200, 87);
+  border: rgb(255, 200, 87);
+  box-sizing: content-box;
+  color: black;
+  font-weight: 600;
+  padding: 3px 5px;
+}
+
+.expenses-form button:hover {
+  background-color: rgba(255, 200, 87, 0.7);
+}
+
+@media screen and ( max-width : 600px ) {
+
+  .dropdown {
+    background-color: #374a59;
+  }
+
+  .expenses-form {
+    align-items: flex-start;
+    flex-flow: column wrap;
+  }
+
+  .expenses-form label {
+    align-items: flex-start;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    padding: 10px;
+    width: 90%;
+  }
+
+  .expenses-form input , .expenses-form select , .expenses-form button {
+    height: 45px;
+    margin: 5px;
+    padding: 0 5px;
+    width: 100%;
+  }
+
+  .expenses-form button {
+    background-color: rgb(255, 200, 87);
+    border: rgb(255, 200, 87);
+    box-sizing: border-box;
+    color: black;
+    font-weight: 600;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+  }
+
+  .dropdown > button {
+    background-color: inherit;
+    border: none;
+    display: block;
+    margin: auto;
+    padding: 5px;
+  }
+
+  .dropdown > button .material-icons {
+    color: white;
+    font-size: 50px;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+
+  .dropdown-content.active {
+    display: block;
+  }
+}

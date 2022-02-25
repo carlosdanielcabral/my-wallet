@@ -1,0 +1,94 @@
+table {
+  border-collapse: separate;
+  box-sizing: border-box;
+  padding: 20px 5px;
+  width: 100%;
+}
+
+thead , tbody , td , th , tr {
+  box-sizing: border-box;
+}
+
+thead {
+  background-color: #fe5e41;
+  color: white;
+}
+
+th {
+  border-radius: 3px;
+  font-weight: 300;
+  padding: 5px;
+}
+
+td {
+  background-color: rgb(230, 230, 230);
+  border-radius: 3px;
+  font-weight: 300;
+  padding: 5px;
+  text-align: center;
+}
+
+td button {
+  background-color: inherit;
+  border: none;
+  padding: 2px;
+}
+
+.material-icons {
+  font-size: 20px;
+}
+
+.material-icons.edit {
+  color: rgb(77, 152, 196);
+}
+
+.material-icons.delete {
+  color: red;
+}
+
+@media screen and ( max-width : 600px ) {
+
+  table {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+  }
+
+  thead {
+    align-items: center;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 150px;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+  }
+
+  tbody {
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: auto;
+  }
+
+  th , td {
+    height: 50px;
+    margin: 3px 0;
+  }
+
+  th {
+    align-items: center;
+    background-color: #fe5e41;
+    display: flex;
+    justify-content: center;
+    width: 150px;
+  }
+
+  td {
+    margin: 3px;
+    width: 200px;
+  }
+}
